@@ -150,7 +150,7 @@ class CommandThread (threading.Thread):
 
     def isRunning(self):
         self.logger.debug("Testing if isRunning")
-        c = """ssh -o ConnectTimeout=10 %(address)s "ps aux | grep 'scan.py\|python3\|tshark' | grep -v 'grep\|vim'" """.strip(
+        c = """ssh -o ConnectTimeout=10 %(address)s "ps aux | grep 'scan.py\|tshark' | grep -v 'grep\|vim'" """.strip(
         )
         r, code = run_command(
             c % {'address': self.config['address']})
@@ -173,7 +173,7 @@ class CommandThread (threading.Thread):
             return False, "%s is not scanning/hosting" % self.config['address']
 
     def kill_pi(self):
-        c = 'ssh -o ConnectTimeout=10 %(address)s "sudo pkill -9 python3"'
+        c = 'ssh -o ConnectTimeout=10 %(address)s "sudo pkill -9 -f scan.py"'
         r, code = run_command(
             c % {'address': self.config['address']})
         self.logger.debug(r)
