@@ -276,7 +276,7 @@ class CommandThread (threading.Thread):
 
 
 def run_command(c):
-    logger.debug("Running command '%s'" % c)
+    logger.info("Running command '%s'" % c)
     p = subprocess.Popen(
         c,
         universal_newlines=True,

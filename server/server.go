@@ -16,6 +16,7 @@ import (
 	"strings"
 	"sync"
 	"time"
+	"syscall"
 
 	"github.com/gin-gonic/gin"
 )
@@ -68,6 +69,8 @@ var CollectionTime int
 
 func main() {
 	gin.SetMode(gin.ReleaseMode)
+
+	fErr, err = os.OpenFile("Errfile", os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0600)
 
 	flag.StringVar(&Port, "port", "8072", "port to run this server on (default: 8072)")
 	flag.StringVar(&ServerAddress, "server", "https://ml.internalpositioning.com", "address to FIND server")
@@ -184,6 +187,7 @@ func process(json ReverseFingerprint) {
 	}
 	for _, signal := range json.Signals {
 		fmt.Println(json.Node, signal.Mac, signal.Rssi)
+		log.Println(json.Node, signal.Mac, signal.Rssi)
 		mac := strings.ToLower(json.Node)
 		user := strings.Replace(strings.ToLower(signal.Mac), ":", "", -1)
 		if _, ok := fingerprints.m[json.Group][user]; !ok {
