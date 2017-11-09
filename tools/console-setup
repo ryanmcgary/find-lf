@@ -4,7 +4,7 @@
 CHARMAP="UTF-8"
 
 CODESET="guess"
-FONT="Terminus"
+FONTFACE="Terminus"
 FONTSIZE="16x32"
 
 ACTIVE_CONSOLES="/dev/tty[1-6]"
