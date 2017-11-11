@@ -1,0 +1,77 @@
+{
+  "group": "rcclport18demo",
+  "scantime": 10,
+  "lfserver": "http://10.218.200.42:8072",
+  "pis": [
+    {
+      "address": "pi@10.218.200.44",
+      "wlan": "wlan1",
+      "notes": "1"
+    },
+    {
+      "address": "pi@10.218.200.51",
+      "wlan": "wlan1",
+      "notes": "2"
+    },
+    {
+      "address": "pi@10.218.200.55",
+      "wlan": "wlan1",
+      "notes": "3"
+    },
+    {
+      "address": "pi@10.218.200.59",
+      "wlan": "wlan1",
+      "notes": "4"
+    },
+    {
+      "address": "pi@10.218.200.64",
+      "wlan": "wlan1",
+      "notes": "5"
+    },
+    {
+      "address": "pi@10.218.200.65",
+      "wlan": "wlan1",
+      "notes": "6"
+    },
+    {
+      "address": "pi@10.218.200.67",
+      "wlan": "wlan1",
+      "notes": "7"
+    },
+    {
+      "address": "pi@10.218.200.69",
+      "wlan": "wlan1",
+      "notes": "8"
+    },
+    {
+      "address": "pi@10.218.200.70",
+      "wlan": "wlan1",
+      "notes": "9"
+    },
+    {
+      "address": "pi@10.218.200.72",
+      "wlan": "wlan1",
+      "notes": "10"
+    },
+    {
+      "address": "pi@10.218.200.73",
+      "wlan": "wlan1",
+      "notes": "11"
+    },
+    {
+      "address": "pi@10.218.200.74",
+      "wlan": "wlan1",
+      "notes": "12"
+    },
+    {
+      "address": "pi@10.218.200.75",
+      "wlan": "wlan1",
+      "notes": "13"
+    },
+    {
+      "address": "pi@10.218.200.76",
+      "wlan": "wlan1",
+      "notes": "14"
+    }
+  ]
+}
