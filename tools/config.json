@@ -4,11 +4,6 @@
   "lfserver": "http://10.218.200.42:8072",
   "pis": [
     {
-      "address": "pi@10.218.200.44",
-      "wlan": "wlan1",
-      "notes": "1"
-    },
-    {
       "address": "pi@10.218.200.51",
       "wlan": "wlan1",
       "notes": "2"
@@ -39,11 +34,6 @@
       "notes": "7"
     },
     {
-      "address": "pi@10.218.200.69",
-      "wlan": "wlan1",
-      "notes": "8"
-    },
-    {
       "address": "pi@10.218.200.70",
       "wlan": "wlan1",
       "notes": "9"
@@ -52,21 +42,6 @@
       "address": "pi@10.218.200.72",
       "wlan": "wlan1",
       "notes": "10"
-    },
-    {
-      "address": "pi@10.218.200.73",
-      "wlan": "wlan1",
-      "notes": "11"
-    },
-    {
-      "address": "pi@10.218.200.74",
-      "wlan": "wlan1",
-      "notes": "12"
-    },
-    {
-      "address": "pi@10.218.200.75",
-      "wlan": "wlan1",
-      "notes": "13"
     },
     {
       "address": "pi@10.218.200.76",
